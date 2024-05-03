@@ -1,6 +1,6 @@
 {
-   "window.zoomLevel": 0,
+   "editor.fontSize": 20,
    "code-runner.executorMap": {
       "typescript": "npx ts-node --files",
-   }
+   },
 }
