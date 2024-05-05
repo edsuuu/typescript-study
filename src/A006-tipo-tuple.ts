@@ -1,22 +1,27 @@
-// Array<T> - T []
+//tipo tuple 
+const dadosCliente: [number, string] = [1, 'teste'];
+const dadosCliente1: [number, string, string] = [1, 'teste', 'novo'];
+const dadosCliente2: [number, string, string?] = [1, 'teste'];
+const dadosCliente3: [number, string, ...string[]] = [1, 'teste'];
 
-export function multiplicarArgs(...args: Array<number>): number {
-    return args.reduce((ac, valor) => ac * valor, 1)
-}
+dadosCliente[0] = 100;
+dadosCliente[1] = 'testando';
 
-export function concatenarString(...args: string[]): string {
-    return args.reduce((ac, valor) => ac + valor)
-}
-
-export function toUpperCase(...args: string[]): string[] {
-  return args.map((valor) => valor.toUpperCase());
-}
-
-const result = multiplicarArgs(1, 2, 3);
-
-const concatenacao = concatenarString('a', 'b', 'c');
-
-const upper = toUpperCase('a', 'b', 'c');
+dadosCliente1[0] = 234;
+dadosCliente1[1] = 'testando';
 
 
-console.log(result, concatenacao, upper);
+dadosCliente.pop();
+
+console.log(dadosCliente);
+console.log(dadosCliente1);
+console.log(dadosCliente2);
+console.log(dadosCliente3);
+
+//array readonly
+
+const array: readonly string[] = ['teste', 'testando'];
+const array2: ReadonlyArray<string> = ['teste', 'testando'];
+
+console.log(array);
+console.log(array2);
