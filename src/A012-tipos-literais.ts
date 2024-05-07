@@ -17,7 +17,6 @@ function escolhaOneCor(cor: 'Vermelho' | 'Amarelo' | 'Azul') {
   return cor;
 }
 
-console.log(escolhaOneCor('Vermelho'));
-
+console.log(person, escolhaOneCor('Vermelho'));
 
 // export default 1;
