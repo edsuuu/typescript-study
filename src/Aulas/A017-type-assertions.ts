@@ -17,6 +17,7 @@ input.focus();
 
 // nao é recomendado fazer
 
+
 // Type Assertion
 
 const body4 = (document.querySelector('body') as unknown) as number;
