@@ -33,7 +33,8 @@ export class Aluno extends Pessoa {
     cpf: string,
     public sala: string,
   ) {
-      super();
+    super(nome, sobrenome, idade, cpf);
+    this.sala = sala;
   }
 
   getNomeCompleto(): string {
@@ -52,9 +53,9 @@ export class Cliente extends Pessoa {
 }
 
 const pessoa = new Pessoa('Edson', 'Silva', 30, '11.222.333-44');
-const aluno = new Aluno('Edson', 'Silva', 30, '11.222.333-44');
+const aluno = new Aluno('Edson', 'Silva', 30, '11.222.333-44', "001");
 const cliente = new Cliente('Edson', 'Silva', 30, '11.222.333-44');
 
 console.log(pessoa.getNomeCompleto());
-console.log(aluno.getNomeCompleto());
+console.log(aluno);
 console.log(cliente.getNomeCompleto());
