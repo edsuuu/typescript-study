@@ -10,6 +10,7 @@ interface VideoPlayerProtocol {
   iniciarEventos(): void;
 }
 
+
 export default class VideoPlayer implements VideoPlayerProtocol {
   private videoPlayer: HTMLVideoElement;
   private playButton: HTMLButtonElement;
@@ -41,7 +42,7 @@ export default class VideoPlayer implements VideoPlayerProtocol {
       this.videoPlayer.pause();
       this.playButton.innerText = 'Play';
     }
-  } 
+  }
   stop(): void {}
 }
 
