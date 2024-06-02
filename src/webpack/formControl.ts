@@ -52,11 +52,11 @@ function showErrorMessage(input: HTMLInputElement, msg: string): void {
 }
 
 function showSuccessMessage(form: HTMLFormElement): boolean {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    let send: boolean = true;
-    form.querySelectorAll(`.${SHOW_ERRORS_MESSAGES}`).forEach((item) => {
-        send = false;
-        item.classList.add(SHOW_ERRORS_MESSAGES);
-    });
-    return send;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  let send: boolean = true;
+  form.querySelectorAll(`.${SHOW_ERRORS_MESSAGES}`).forEach((item) => {
+    send = false;
+    item.classList.add(SHOW_ERRORS_MESSAGES);
+  });
+  return send;
 }
